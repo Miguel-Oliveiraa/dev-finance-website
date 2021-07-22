@@ -1,8 +1,8 @@
 :root {
   --background-color: #f0f2f5;
-  --background-header: #2C1D52;
+  --background-header: #2c1d52;
   --dark-blue: #363f5f;
-  --light-blue : #0099ff;
+  --light-blue: #0099ff;
   --light-red: #e92929;
 
   /* font-family: 'Poppins', sans-serif; */
@@ -150,7 +150,7 @@ header {
 }
 
 .card.total {
-  background-color: #4F3391;
+  background-color: #4f3391;
   color: white;
 }
 
@@ -211,7 +211,7 @@ td.expense {
   color: var(--light-red);
 }
 /* ===========Modal============= */
-.modal-wrapper {
+.modal-overlay {
   width: 100vw;
   height: 100vh;
 
@@ -228,7 +228,7 @@ td.expense {
   visibility: hidden;
 }
 
-.modal-wrapper.active {
+.modal-overlay.active {
   opacity: 1;
   visibility: visible;
 }
