@@ -100,11 +100,11 @@ const DOM = {
 
   updateBalance() {
     const income = document.getElementById("incomeDisplay");
-    income.innerHTML = Transaction.incomes();
+    income.innerHTML = Utils.formatCurrency(Transaction.incomes());
     const expenses = document.getElementById("expenseDisplay");
-    expenses.innerHTML = Transaction.expenses();
+    expenses.innerHTML = Utils.formatCurrency(Transaction.expenses());
     const total = document.getElementById("totalDisplay");
-    total.innerHTML = Transaction.total();
+    total.innerHTML = Utils.formatCurrency(Transaction.total());
   },
 };
 
