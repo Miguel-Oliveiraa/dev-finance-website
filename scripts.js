@@ -37,12 +37,19 @@ const transactions = [
 ];
 
 const Transaction = {
+  all: transactions,
+  add(transaction) {
+    Transaction.all.push(transactions);
+
+    console.log(Transaction.all);
+  },
+
   incomes() {
     let income = 0;
 
     // pegar todas as transações
     // se ela for maior que 0
-    transactions.forEach((transactions) => {
+    Transaction.all.forEach((transactions) => {
       // se ela for maior que zero
       if (transactions.amount > 0) {
         // somar a uma variavel e retornar ela
@@ -52,12 +59,13 @@ const Transaction = {
 
     return income;
   },
+
   expenses() {
     let expense = 0;
 
     // pegar todas as transações
     // se ela for menor que 0
-    transactions.forEach((transactions) => {
+    Transaction.all.forEach((transactions) => {
       // se ela for maior que zero
       if (transactions.amount < 0) {
         // somar a uma variavel e retornar ela
