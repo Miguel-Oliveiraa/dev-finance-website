@@ -39,9 +39,9 @@ const transactions = [
 const Transaction = {
   all: transactions,
   add(transaction) {
-    Transaction.all.push(transactions);
+    Transaction.all.push(transaction);
 
-    console.log(Transaction.all);
+    App.reload()
   },
 
   incomes() {
@@ -114,6 +114,10 @@ const DOM = {
     const total = document.getElementById("totalDisplay");
     total.innerHTML = Utils.formatCurrency(Transaction.total());
   },
+
+  clearTransactions() {
+    DOM.transactionsContainer.innerHTML = ""
+  }
 };
 
 const Utils = {
@@ -132,8 +136,30 @@ const Utils = {
   },
 };
 
-transactions.forEach(function (transaction) {
-  DOM.addTransaction(transaction);
-});
+const App = {
+  init() {
 
-DOM.updateBalance();
+    Transaction.all.forEach(transaction => {
+      DOM.addTransaction(transaction);
+    });
+    
+    DOM.updateBalance();
+  },
+  reload() {
+    DOM.clearTransactions()
+    App.init()
+  },
+}
+
+App.init()
+
+
+Transaction.add({
+  id: 39,
+  description: "alo",
+  amount: 200,
+  date: '23/01/2021',
+})
+
+
+
