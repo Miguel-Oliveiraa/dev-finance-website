@@ -1,4 +1,4 @@
-const modalOverlay = document.querySelector("modal-overlay");
+const modalOverlay = document.querySelector(".modal-overlay");
 
 const Modal = {
   open() {
@@ -9,31 +9,29 @@ const Modal = {
   },
 };
 
-const transactions = [
-  {
-    description: "Luz",
-    amount: -50000,
-    date: "21/07/2021",
-  },
-  {
-    description: "Criação website",
-    amount: 500000,
-    date: "21/07/2021",
-  },
-  {
-    description: "Internet",
-    amount: -20000,
-    date: "21/07/2021",
-  },
-  {
-    description: "APP",
-    amount: 200000,
-    date: "26/07/2021",
-  },
-];
-
 const Transaction = {
-  all: transactions,
+  all: [
+    {
+      description: "Luz",
+      amount: -50000,
+      date: "21/07/2021",
+    },
+    {
+      description: "Criação website",
+      amount: 500000,
+      date: "21/07/2021",
+    },
+    {
+      description: "Internet",
+      amount: -20000,
+      date: "21/07/2021",
+    },
+    {
+      description: "APP",
+      amount: 200000,
+      date: "26/07/2021",
+    },
+  ],
   add(transaction) {
     Transaction.all.push(transaction);
 
@@ -138,9 +136,10 @@ const Utils = {
   },
 };
 
-const App = {
-  init() {
 
+
+const App = {
+  init() { 
     Transaction.all.forEach(transaction => {
       DOM.addTransaction(transaction);
     });
@@ -155,6 +154,5 @@ const App = {
 
 App.init()
 
-Transaction.remove(0)
 
 
