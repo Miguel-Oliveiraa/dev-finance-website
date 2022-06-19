@@ -3,10 +3,10 @@
 </h1>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-tecnologias">Technologies</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-projeto">Project</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+  <a href="#memo-licença">License</a>
 </p>
 
 <p align="center">
@@ -21,23 +21,24 @@
   <img alt="dev.finances" src="./github/devfinancesPrtSc.png" width="100%">
 </p>
 
-## 🚀 Tecnologias
+## 🚀 Technologies
 
-Esse projeto foi desenvolvido com as seguintes tecnologias:
+This project was built with:
 
 - HTML
 - CSS
 - JavaScript
 
-## 💻 Projeto
+## 💻 Project
 
 O dev.finances é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída 💰
 
 ## 🔖 Layout
 
-Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/7Vu9DzUaCZIV4nibzkjgB4/dev.finance%24-Maratona-Discover). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
+You can see this project layout with [this link](https://www.figma.com/file/7Vu9DzUaCZIV4nibzkjgB4/dev.finance%24-Maratona-Discover). 
+A [Figma](https://figma.com) account is required to acess.
 
-## :memo: Licença
+## :memo: License
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
+This project is under the MIT license. See the [LICENSE](LICENSE.md) file for more details.
 
