@@ -31,7 +31,7 @@ This project was built with:
 
 ## 💻 Project
 
-O dev.finances é uma aplicação de controle financeiro, onde é possível cadastrar e excluir transações e ver o saldo de entrada e saída 💰
+Dev.finances is a financial control application, where you can register and delete transactions and see the incoming and outgoing balance. 💰
 
 ## 🔖 Layout
 
